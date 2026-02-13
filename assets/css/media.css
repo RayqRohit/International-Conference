@@ -1,0 +1,21 @@
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+
+    .main-heading {
+        font-size: 32px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .event-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

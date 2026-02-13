@@ -1,0 +1,962 @@
+/* ===== FONTS ===== */
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+/* ===== SMOOTH SCROLL ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-regular: 'Poppins-Regular', sans-serif;
+    --font-medium: 'Poppins-Medium', sans-serif;
+    --font-bold: 'Poppins-Bold', sans-serif;
+    --font-extrabold: 'Poppins-ExtraBold', sans-serif;
+}
+
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: var(--font-regular);
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background-color: #2d2828af;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #fa6724;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    position: relative;
+    background: url('../images/hero/hero-background-texture.png') no-repeat center;
+    background-size: cover;
+    min-height: 118vh;
+    padding-bottom: 120px;
+}
+
+/* .hero-section {
+    background: url('../images/hero/hero-background-texture.png') no-repeat center;
+    background-size: cover;
+} */
+
+/* ===== NAVBAR ===== */
+.hero-navbar {
+    padding: 30px 0;
+}
+
+.logo {
+    height: 70px;
+}
+
+.naac-grade {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.naac-grade strong {
+    color: #c40000;
+}
+
+.nav-links a {
+    font-size: 1.4rem;
+    color: #222;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c40000;
+}
+
+/* ===== HERO CONTENT ===== */
+.hero-content {
+    margin-top: 80px;
+}
+
+.faculty-text {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 3rem;
+    font-family: var(--font-medium);
+    font-weight: 500;
+}
+
+.conference-badge {
+    display: inline-block;
+    background: #b60000;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-family: var(--font-medium);
+    font-size: 1.9rem;
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    font-family: var(--font-extrabold);
+}
+
+/* ===== EVENT INFO ===== */
+.event-info {
+    margin-top: 20px;
+}
+
+.date-block h3 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-family: var(--font-extrabold);
+}
+
+.date-block p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.divider {
+    width: 1px;
+    height: 60px;
+    background: #999;
+}
+
+.partner-block p {
+    font-size: 14px;
+}
+
+.partner-logo {
+    height: 50px;
+}
+
+/* ===== HERO IMAGE ===== */
+.hero-image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* .hero-image {
+    margin-top: -500px;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+} */
+
+
+
+.red-strip-section {
+    width: 100%;
+}
+
+.red-strip {
+    width: 100%;
+    height: 8px;
+    background-color: #b60000;
+}
+
+
+
+/* ===== ABOUT SECTION ===== */
+
+
+/* ===== ABOUT SECTION ===== */
+
+.about-section {
+    background-color: #f2f2f2;
+    padding: 100px 0 0 0;
+}
+
+.about-block {
+    margin-bottom: 80px;
+}
+
+.about-heading {
+    font-family: var(--font-extrabold);
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.highlight {
+    color: #920000;
+}
+
+.arrow {
+    color: #920000;
+    font-size: 1.8rem;
+}
+
+.about-text {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: var(--font-medium);
+    color: #333;
+}
+
+/* Bottom Image */
+.about-bottom-image {
+    margin-top: 80px;
+}
+
+.about-bottom-image img {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* ===== OBJECTIVES SECTION ===== */
+
+/* ===== OBJECTIVES SECTION ===== */
+
+.objectives-section {
+    background-color: #920000;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.objectives-heading {
+    font-family: var(--font-extrabold);
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Triangle Icon */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 18px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+/* Objectives List */
+.objectives-list {
+    margin: 0 auto;
+}
+
+.objective-item {
+    padding: 20px 0;
+    font-size: 1.2rem;
+    font-family: var(--font-medium);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.objective-item.no-border {
+    border-bottom: none;
+}
+
+
+
+/* ========================= */
+/* THEME SECTION */
+/* ========================= */
+
+.theme-section {
+    background: #f2f2f2;
+    padding: 100px 0;
+}
+
+/* Heading */
+.theme-heading h2 {
+    font-family: var(--font-extrabold);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.theme-subtitle {
+    font-size: 1.2rem;
+    font-family: var(--font-medium);
+    margin-bottom: 80px;
+}
+
+.highlight {
+    color: #b60000;
+}
+
+
+
+/* ========================= */
+/* THEME CARDS */
+/* ========================= */
+
+.theme-card {
+    display: flex;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.theme-card.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE SIDE */
+.theme-image {
+    width: 40%;
+}
+
+.theme-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.theme-heading h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-heading h2 .arrow {
+    color: #920000;
+    font-size: 1.8rem;
+    margin: 0 15px;
+}
+
+.word-space {
+    margin-left: 10px;
+}
+
+/* CONTENT WRAPPER (controls spacing area) */
+.theme-content-wrapper {
+    width: 60%;
+
+}
+
+/* GREY BOX */
+.theme-content {
+    background: #e6e6e6;
+    padding: 60px;
+    margin-left: 60px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Reverse spacing fix */
+.theme-card.reverse .theme-content {
+    margin-left: 0;
+    margin-right: 60px;
+}
+
+.theme-content h4 {
+    font-family: var(--font-bold);
+    margin-bottom: 20px;
+    font-size: 2rem;
+    width: 75%;
+    line-height: 1.3;
+}
+
+.theme-content p {
+    font-family: var(--font-regular);
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.theme-content ol {
+    padding-left: 20px;
+}
+
+.theme-content li {
+    margin-bottom: 8px;
+    font-family: var(--font-regular);
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.theme-section .theme-card:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* ========================= */
+/* KEYNOTE SPEAKERS SECTION */
+/* ========================= */
+
+.speakers-section {
+    background: #920000;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.speakers-heading h2 {
+    font-family: var(--font-extrabold);
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+}
+
+/* White Arrow */
+.arrow.white {
+    border-left: 15px solid #fff;
+}
+
+/* Grid Layout */
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 100px;
+}
+
+/* Speaker Card */
+.speaker-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Circular Image */
+.speaker-image {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #fff;
+    flex-shrink: 0;
+}
+
+.speaker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Info */
+.speaker-info h4 {
+    font-family: var(--font-bold);
+    margin-bottom: 10px;
+}
+
+.speaker-info p {
+    font-family: var(--font-regular);
+    line-height: 1.6;
+}
+
+.speakers-heading h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.speakers-heading h2 .arrow {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+
+
+
+/* ========================= */
+/* SCIENTIFIC COMMITTEE */
+/* ========================= */
+
+.committee-section {
+    background: #f2f2f2;
+    position: relative;
+}
+
+/* Red strips */
+.committee-top-strip,
+.committee-bottom-strip {
+    height: 20px;
+    background: #b60000;
+}
+
+/* Content Wrapper */
+.committee-content {
+    position: relative;
+    padding: 80px 0;
+}
+
+/* Decorative Images */
+.committee-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.committee-img.left {
+    left: 0;
+}
+
+.committee-img.right {
+    right: 0;
+}
+
+.committee-img img {
+    height: 650px;
+    object-fit: cover;
+}
+
+/* Heading */
+.committee-heading h2 {
+    font-family: var(--font-extrabold);
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.committee-heading h2 .arrow {
+    color: #920000;
+    font-size: 1.8rem;
+    margin: 0 15px;
+}
+
+.highlight {
+    color: #b60000;
+}
+
+/* Grid Layout */
+.committee-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    position: relative;
+}
+
+.committee-column {
+    width: 40%;
+}
+
+/* Vertical Divider */
+.committee-divider {
+    width: 2px;
+    background: #333;
+    min-height: 220px;
+}
+
+/* Member */
+.committee-member {
+    margin-bottom: 40px;
+}
+
+.committee-member h5 {
+    font-family: var(--font-bold);
+    margin-bottom: 8px;
+}
+
+.committee-member p {
+    font-family: var(--font-regular);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* ========================= */
+/* PUBLICATION SECTION */
+/* ========================= */
+
+.publication-section {
+    background: #920000;
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Heading */
+.publication-heading h2 {
+    font-family: var(--font-extrabold);
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* White Arrow */
+
+.publication-heading h2 .arrow {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0 15px;
+
+}
+
+
+/* Content */
+.publication-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Intro paragraph */
+.publication-intro {
+    font-family: var(--font-regular);
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+
+}
+
+/* List */
+.publication-list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.publication-list li {
+    font-family: var(--font-regular);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+/* ========================= */
+/* ORGANIZING COMMITTEE */
+/* ========================= */
+
+.organizing-section {
+    background: #f2f2f2;
+    padding: 100px 0;
+}
+
+/* Heading */
+.organizing-heading h2 {
+    font-family: var(--font-extrabold);
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+}
+
+.highlight {
+    color: #b60000;
+}
+
+/* Grid */
+.organizing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* Columns */
+.organizing-column {
+    width: 40%;
+}
+
+/* Divider */
+.organizing-divider {
+    width: 2px;
+    background: #333;
+    min-height: 150px;
+}
+
+/* Member */
+.organizing-member {
+    margin-bottom: 40px;
+}
+
+.organizing-member h5 {
+    font-family: var(--font-bold);
+    margin-bottom: 8px;
+}
+
+.organizing-member p {
+    font-family: var(--font-regular);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+/* ========================= */
+/* REGISTRATION SECTION */
+/* ========================= */
+
+.registration-section {
+    background: #920000;
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Heading */
+.registration-heading h2 {
+    font-family: var(--font-extrabold);
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.registration-heading h2 .arrow {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0 15px;
+}
+
+
+/* Grid */
+.registration-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Items */
+.registration-item {
+    text-align: center;
+    width: 30%;
+}
+
+/* Icon */
+.registration-icon img {
+    width: 120px;
+    margin-bottom: 25px;
+}
+
+/* Title */
+.registration-item h4 {
+    font-family: var(--font-medium);
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+/* Price */
+.price {
+    font-family: var(--font-extrabold);
+    font-size: 2.3rem;
+}
+
+/* Divider */
+.registration-divider {
+    width: 1px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+
+
+/* ========================= */
+/* EVENT SCHEDULE */
+/* ========================= */
+
+.schedule-section {
+    background: #f2f2f2;
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+
+.schedule-section .schedule-container {
+    padding-inline: 4rem;
+}
+
+.schedule-heading h2 {
+    font-family: var(--font-extrabold);
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-heading h2 .arrow {
+    color: #920000;
+    font-size: 1.8rem;
+    margin: 0 15px;
+}
+
+.highlight {
+    color: #920000;
+}
+
+/* Table Wrapper */
+.schedule-table-wrapper {
+    overflow-x: auto;
+}
+
+/* Table */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Table Head */
+.schedule-table thead th {
+    padding: 15px;
+    font-family: var(--font-medium);
+    text-align: left;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+/* Table Body */
+.schedule-table td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-family: var(--font-medium);
+
+    font-size: 1.2rem;
+}
+
+/* Day Rows */
+.day-row td {
+    background: #920000;
+    color: #fff;
+    font-family: var(--font-bold);
+    text-align: center;
+}
+
+
+.schedule-bottom-strip {
+    height: 4rem;
+    background: #920000;
+    width: 100%;
+    margin-top: 6rem;
+}
+
+
+/* ===== SCROLL TO TOP BUTTON ===== */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #920000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(146, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background: #750000;
+    box-shadow: 0 6px 16px rgba(146, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+.scroll-to-top:active {
+    transform: translateY(0);
+}
+
+.scroll-to-top svg {
+    width: 24px;
+    height: 24px;
+}
