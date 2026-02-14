@@ -712,6 +712,12 @@ a {
 
 }
 
+.organizing-heading h2 .arrow {
+    color: #920000;
+    font-size: 1.8rem;
+    margin: 0 15px;
+}
+
 .highlight {
     color: #b60000;
 }
@@ -959,4 +965,87 @@ a {
 .scroll-to-top svg {
     width: 24px;
     height: 24px;
+}
+
+
+
+/* custom navbar things */
+
+
+/* ================= CUSTOM NAV INSIDE HERO ================= */
+
+.custom-nav {
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    column-gap: 3.5rem;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 3rem;
+}
+
+.nav-link {
+    position: relative;
+    color: #222;
+    font-family: var(--font-medium);
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.nav-link span {
+    position: relative;
+    transition: margin 0.3s;
+}
+
+.nav-link span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: #b60000;
+    transition: width 0.3s ease-out;
+}
+
+/* Hover */
+.nav-link:hover span {
+    margin-left: 1.8rem;
+}
+
+.nav-link:hover i {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-link:hover span::after {
+    width: 100%;
+}
+
+/* Sibling fade */
+.nav-list:has(.nav-link:hover) .nav-link:not(:hover) {
+    opacity: 0.5;
+}
+
+/* Toggle + Close */
+.nav-toggle,
+.nav-close {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }

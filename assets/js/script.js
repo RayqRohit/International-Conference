@@ -1,3 +1,31 @@
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+if(navToggle){
+   navToggle.addEventListener('click', () =>{
+      navMenu.classList.add('show-menu')
+   })
+}
+
+if(navClose){
+   navClose.addEventListener('click', () =>{
+      navMenu.classList.remove('show-menu')
+   })
+}
+
+// Close menu when clicking on a nav link
+const navLinks = document.querySelectorAll('.nav-link')
+
+navLinks.forEach(link => {
+   link.addEventListener('click', () => {
+      navMenu.classList.remove('show-menu')
+   })
+})
+
+
+
+
 // Scroll to Top Functionality
 // Get the button
 const scrollToTopBtn = document.getElementById('scrollToTop');

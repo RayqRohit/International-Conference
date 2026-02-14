@@ -1,5 +1,5 @@
 /* ===== RESPONSIVE ===== */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 
     .main-heading {
         font-size: 32px;
@@ -16,6 +16,1876 @@
     .event-info {
         flex-direction: column;
         gap: 20px;
+    }
+
+} */
+
+@media screen and (max-width : 767px) {
+
+    .committee-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .registration-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    /* Fixed: about-heading class is on h2 itself, not a wrapper div */
+    .about-heading .arrow:last-child {
+        display: none;
+    }
+
+    .theme-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .speakers-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .publication-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .organizing-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+
+
+}
+
+/* for custom navbar */
+@media screen and (max-width: 1124px) {
+
+    .nav-toggle,
+    .nav-close {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        padding: 6rem 3rem 4rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* ✅ important */
+        align-items: flex-start;
+        /* ✅ important */
+        transition: left 0.3s;
+        z-index: 999;
+    }
+
+    .show-menu {
+        left: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+
+    .nav-link {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-link span::after {
+        background-color: #fff;
+    }
+
+    .nav-close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        color: #fff;
+        font-size: 2rem;
+        z-index: 1000;
+    }
+
+
+    .nav-list {
+        align-items: flex-start;
+        list-style: none;
+        padding-left: 0;
+        padding-top: 3rem;
+    }
+
+    .nav-link:hover i {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links a {
+        color: #fff;
+    }
+
+    .nav-links a:hover {
+        color: #fff;
+        opacity: 0.8;
+    }
+
+    /* Nav Item Animation */
+    .nav-item {
+        transform: translateX(-150px);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+    }
+
+    .show-menu .nav-item {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-item:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .nav-item:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .nav-item:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    .nav-item:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    .nav-item:nth-child(5) {
+        transition-delay: 0.5s;
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+        color: #fff !important;
+    }
+}
+
+
+@media screen and (min-width : 1200px) and (max-width : 1400px) {
+
+    .committee-grid {
+
+        gap: 60px;
+        max-width: 80%;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    /* Container padding adjustment */
+    .container-fluid {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        min-height: 110vh;
+        padding-bottom: 120px;
+    }
+
+    /* Logo */
+    .logo {
+        height: 68px;
+    }
+
+    /* Hero Content spacing */
+    .hero-content {
+        margin-top: 85px;
+        padding: 0 60px;
+    }
+
+    /* Faculty text */
+    .faculty-text {
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Conference badge */
+    .conference-badge {
+        font-size: 1.8rem;
+        padding: 12px 28px;
+    }
+
+    /* Main heading */
+    .main-heading {
+        font-size: 2.8rem;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+
+    /* Event Info */
+    .date-block h3 {
+        font-size: 27px;
+    }
+
+    .date-block p {
+        font-size: 16px;
+    }
+
+    .partner-logo {
+        height: 50px;
+    }
+
+    .divider {
+        height: 60px;
+    }
+
+    /* Hero image */
+    .hero-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    /* about */
+
+    .about-section {
+        padding: 100px 0 0 0;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    .about-bottom-image {
+        margin-top: 80px;
+    }
+
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
+
+
+
+
+    /* objective  */
+
+    /* objective */
+    .objectives-heading {
+        font-size: 2.3rem;
+        margin-bottom: 45px;
+    }
+
+    .objective-item {
+        font-size: 1.3rem;
+        padding: 35px 0 35px 0;
+        line-height: 1.6;
+    }
+
+
+    /* speakers section */
+
+    .speaker-card {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .speaker-image {
+        width: 170px;
+        height: 170px;
+    }
+
+    .speaker-info h4 {
+        font-size: 1.25rem;
+    }
+
+    .speaker-info p {
+        font-size: 1rem;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    /* committee section */
+
+
+    .committee-grid {
+
+        gap: 40px;
+        position: relative;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .committee-img img {
+        height: 570px;
+        object-fit: cover;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* Container padding */
+    .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        min-height: 105vh;
+        padding-bottom: 110px;
+    }
+
+    /* Logo */
+    .logo {
+        height: 65px;
+    }
+
+    /* Hero Content */
+    .hero-content {
+        margin-top: 120px;
+        padding: 0 40px;
+    }
+
+    /* Faculty text */
+    .faculty-text {
+        font-size: 1.2rem;
+        margin-bottom: 2.8rem;
+    }
+
+    /* Conference badge */
+    .conference-badge {
+        font-size: 1.7rem;
+        padding: 12px 25px;
+    }
+
+    /* Main heading */
+    .main-heading {
+        font-size: 2.6rem;
+        line-height: 1.25;
+        margin-bottom: 40px;
+    }
+
+    /* Event Info */
+    .date-block h3 {
+        font-size: 26px;
+    }
+
+    .date-block p {
+        font-size: 16px;
+    }
+
+    .partner-logo {
+        height: 48px;
+    }
+
+    .divider {
+        height: 55px;
+    }
+
+    /* Hero Image */
+    .hero-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    /* about */
+
+    .about-section {
+        padding: 90px 0 0 0;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+        gap: 10px;
+    }
+
+    .arrow {
+        font-size: 1.6rem;
+    }
+
+    .about-text {
+        font-size: 1.08rem;
+        padding: 0 10px;
+    }
+
+    .about-bottom-image {
+        margin-top: 70px;
+    }
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
+
+
+    /* objective  */
+
+    /* objective */
+    .objectives-heading {
+        font-size: 1.8rem;
+        margin-bottom: 45px;
+    }
+
+    .objective-item {
+        font-size: 1.2rem;
+        padding: 35px 0 35px 0;
+        line-height: 1.6;
+    }
+
+
+
+    /* theme section */
+
+
+    .theme-heading h2 {
+        font-size: 2.2rem;
+    }
+
+    .theme-subtitle {
+        font-size: 1.15rem;
+    }
+
+    /* Still stack for clean tablet layout */
+    .theme-card,
+    .theme-card.reverse {
+        flex-direction: column;
+    }
+
+    .theme-image {
+        width: 100%;
+        height: 800px;
+    }
+
+    .theme-content {
+        margin: 0;
+        padding: 50px;
+    }
+
+    .theme-content h4 {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .theme-content p {
+        font-size: 1.2rem;
+    }
+
+    .theme-content li {
+        font-size: 1.05rem;
+    }
+
+    .theme-card {
+        margin-bottom: 3rem;
+    }
+
+    .theme-image img {
+        object-position: top;
+    }
+
+    .theme-section {
+        background: #f2f2f2;
+        padding: 100px 0 4rem;
+    }
+
+
+    /* speakers section */
+
+    .speaker-card {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .speaker-image {
+        width: 170px;
+        height: 170px;
+    }
+
+    .speaker-info h4 {
+        font-size: 1.25rem;
+    }
+
+    .speaker-info p {
+        font-size: 1rem;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+
+    /* committee section */
+
+    .committee-heading h2 {
+        font-size: 2.2rem;
+    }
+
+    .committee-grid {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .committee-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .committee-divider {
+        display: none;
+    }
+
+    .committee-member p {
+        font-size: 1.2rem;
+    }
+
+    .committee-member h5 {
+        font-size: 1.5rem;
+    }
+
+    /* registration section */
+
+    .registration-grid {
+        gap: 20px;
+    }
+
+    .registration-icon img {
+        width: 110px;
+    }
+
+    .registration-item h4 {
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+
+    /* committee section */
+
+    .committee-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .registration-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .about-heading .arrow:last-child {
+        display: none;
+    }
+
+    .theme-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .speakers-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .publication-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .organizing-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    /* speaker section */
+
+
+    .speakers-section {
+        padding: 80px 0;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr 1fr;
+        /* Still single column */
+        gap: 50px;
+    }
+
+    .speaker-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .speaker-image {
+        width: 160px;
+        height: 160px;
+    }
+
+    .speaker-info h4 {
+        font-size: 1.2rem;
+    }
+
+    .speaker-info p {
+        font-size: 1rem;
+    }
+
+
+
+    /* header section */
+
+    /* Container padding adjustment */
+    .container-fluid {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    /* Navbar spacing */
+    .hero-navbar {
+        padding: 25px 0;
+    }
+
+    /* Logo */
+    .logo {
+        height: 60px;
+    }
+
+    /* Hero section height */
+    .hero-section {
+        min-height: 100vh;
+        padding-bottom: 100px;
+    }
+
+    /* Hero content spacing */
+    .hero-content {
+        margin-top: 58px;
+        padding: 0 2.5rem;
+    }
+
+    /* Faculty text */
+    .faculty-text {
+        font-size: 1.15rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Conference badge */
+    .conference-badge {
+        font-size: 1.5rem;
+        padding: 10px 22px;
+    }
+
+    /* Main heading */
+    .main-heading {
+        font-size: 2.4rem;
+        line-height: 1.25;
+        margin-bottom: 35px;
+    }
+
+    /* Event info */
+    .date-block h3 {
+        font-size: 24px;
+    }
+
+    .date-block p {
+        font-size: 15px;
+    }
+
+    .partner-logo {
+        height: 45px;
+    }
+
+    .divider {
+        height: 50px;
+    }
+
+    /* Hero image adjustment */
+    .hero-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    /* about */
+
+
+
+    .about-section {
+        padding: 80px 0 0 0;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 1.05rem;
+        text-align: justify;
+    }
+
+    .about-bottom-image {
+        margin-top: 60px;
+    }
+
+    .container,
+    .container-sm {
+        max-width: 100%;
+    }
+
+
+    /* objective */
+    .objectives-heading {
+        font-size: 1.8rem;
+        margin-bottom: 45px;
+    }
+
+    .objective-item {
+        font-size: 1.1rem;
+        padding: 18px 0 35px 0;
+        line-height: 1.6;
+    }
+
+
+    /* theme section */
+
+    .theme-section {
+        background: #f2f2f2;
+        padding: 100px 0 30px 0;
+    }
+
+    .theme-heading h2 {
+        font-size: 2rem;
+    }
+
+    .theme-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 70px;
+    }
+
+    .theme-card,
+    .theme-card.reverse {
+        flex-direction: column;
+    }
+
+    .theme-image {
+        width: 100%;
+        height: 700px;
+    }
+
+    .theme-content {
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    .theme-content h4 {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    .theme-content p {
+        font-size: 1.1rem;
+    }
+
+    .theme-content li {
+        font-size: 1rem;
+    }
+
+    .theme-card {
+        margin-bottom: 3rem;
+    }
+
+    .theme-image img {
+        object-position: top;
+    }
+
+
+    /* committee section */
+
+
+    .committee-img img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* .committee-img {
+        display: none;
+    } */
+
+    .committee-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .committee-grid {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .committee-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .committee-divider {
+        display: none;
+    }
+
+    .committee-member p {
+        font-size: 1rem;
+    }
+
+
+
+    /* publication section */
+
+    .publication-section {
+        padding: 80px 0;
+    }
+
+    .publication-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .publication-intro {
+        font-size: 1.1rem;
+    }
+
+    .publication-list li {
+        font-size: 1.05rem;
+    }
+
+
+    /* organizing committee */
+
+    .organizing-heading h2 {
+
+        font-size: 2rem;
+    }
+
+    .organizing-grid {
+        gap: 40px;
+    }
+
+    /* registraion section */
+
+    .registration-section {
+        padding: 80px 0;
+    }
+
+    .registration-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .registration-grid {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .registration-item {
+        width: 80%;
+    }
+
+    .registration-icon img {
+        width: 100px;
+    }
+
+    .registration-item h4 {
+        font-size: 1.6rem;
+    }
+
+    .price {
+        font-size: 1.8rem;
+    }
+
+    .registration-divider {
+        display: none;
+    }
+
+
+    /* event section */
+
+    .schedule-section {
+        padding-top: 80px;
+    }
+
+    .schedule-section .schedule-container {
+        padding-inline: 2rem;
+    }
+
+    .schedule-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .schedule-table thead th {
+        font-size: 1.05rem;
+    }
+
+    .schedule-table td {
+        font-size: 1rem;
+    }
+
+    .schedule-bottom-strip {
+        height: 3.2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 377px) and (max-width: 576px) {
+
+    /* Hide last arrows for all headings */
+    .committee-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .registration-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .about-heading .arrow:last-child {
+        display: none;
+    }
+
+    .theme-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .speakers-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .publication-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .organizing-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    /* speaker section */
+
+    .speakers-section {
+        padding: 70px 0;
+    }
+
+    .speakers-heading h2 {
+        font-size: 1.6rem;
+        margin-bottom: 50px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+        /* Single column */
+        gap: 40px;
+    }
+
+    .speaker-card {
+        flex-direction: column;
+        /* Stack image + text */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .speaker-image {
+        width: 140px;
+        height: 140px;
+        border-width: 4px;
+    }
+
+    .speaker-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .speaker-info p {
+        font-size: 0.95rem;
+    }
+
+
+    /* about */
+
+    .objectives-section {
+        padding: 70px 0;
+    }
+
+    .objectives-heading {
+        font-size: 1.8rem;
+        margin-bottom: 45px;
+    }
+
+    .triangle {
+        border-left: 14px solid #fff;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+    }
+
+    .objective-item {
+        font-size: 1rem;
+        padding: 18px 0;
+        line-height: 1.6;
+    }
+
+
+    /* header */
+
+    /* Reduce side padding */
+    .container-fluid {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    /* Navbar spacing */
+    .hero-navbar {
+        padding: 20px 0;
+    }
+
+    /* Logo size */
+    .logo {
+        height: 42px;
+    }
+
+    /* Hero Section Height */
+    .hero-section {
+        min-height: 95vh;
+        padding-bottom: 80px;
+    }
+
+    /* Hero Content spacing */
+    .hero-content {
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+
+    /* Faculty text */
+    .faculty-text {
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Conference badge */
+    .conference-badge {
+        font-size: 1.2rem;
+        padding: 8px 18px;
+    }
+
+    /* Main heading */
+    .main-heading {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+    /* Date section */
+    .date-block h3 {
+        font-size: 22px;
+    }
+
+    .date-block p {
+        font-size: 14px;
+    }
+
+    .partner-logo {
+        height: 40px;
+    }
+
+    .divider {
+        height: 40px;
+    }
+
+    /* Hero image */
+    .hero-image img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+
+    /* about */
+
+    .about-section {
+        padding: 70px 0 0 0;
+    }
+
+    .about-block {
+        margin-bottom: 60px;
+    }
+
+    .about-heading {
+        font-size: 1.8rem;
+        gap: 15px;
+    }
+
+    .arrow {
+        font-size: 1.4rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .about-bottom-image {
+        margin-top: 50px;
+    }
+
+
+
+    /* theme section */
+
+    .theme-section {
+        padding: 70px 0;
+    }
+
+    .theme-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .theme-subtitle {
+        font-size: 1rem;
+        margin-bottom: 60px;
+    }
+
+    .theme-card,
+    .theme-card.reverse {
+        flex-direction: column;
+    }
+
+    .theme-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .theme-content {
+        margin: 0;
+        padding: 30px 10px;
+    }
+
+    .theme-content h4 {
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    .theme-content p {
+        font-size: 1.05rem;
+    }
+
+    .theme-content li {
+        font-size: 0.95rem;
+    }
+
+    .theme-card {
+        margin-bottom: 2rem;
+    }
+
+
+    /* committee section */
+
+    .committee-content {
+        padding: 60px 0;
+    }
+
+    /* Hide decorative images */
+    .committee-img {
+        display: none;
+    }
+
+    .committee-heading h2 {
+        font-size: 1.6rem;
+        margin-bottom: 65px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .committee-grid {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .committee-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .committee-divider {
+        display: none;
+    }
+
+    .committee-member h5 {
+        font-size: 1.4rem;
+    }
+
+    .committee-member p {
+        font-size: 1rem;
+    }
+
+    .committee-top-strip,
+    .committee-bottom-strip {
+        height: 12px;
+    }
+
+
+
+    /* publication section */
+
+    .publication-section {
+        padding: 70px 0;
+    }
+
+    .publication-heading h2 {
+        font-size: 1.6rem;
+        margin-bottom: 35px;
+    }
+
+    .publication-intro {
+        font-size: 1.05rem;
+        text-align: center;
+    }
+
+    .publication-list li {
+        font-size: 1rem;
+    }
+
+
+    /* organizing committee */
+
+    .organizing-section {
+        padding: 70px 0;
+    }
+
+    .organizing-heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .organizing-grid {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .organizing-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .organizing-divider {
+        display: none;
+    }
+
+    .organizing-member p {
+        font-size: 1rem;
+    }
+
+    .organizing-member h5 {
+        font-size: 1.3rem;
+    }
+
+
+    /* registraion section */
+
+    .registration-section {
+        padding: 70px 0;
+    }
+
+    .registration-heading h2 {
+        font-size: 1.7rem;
+    }
+
+    .registration-grid {
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .registration-item {
+        width: 100%;
+    }
+
+    .registration-icon img {
+        width: 110px;
+    }
+
+    .registration-item h4 {
+        font-size: 1.4rem;
+    }
+
+    .price {
+        font-size: 1.6rem;
+    }
+
+    .registration-divider {
+        display: none;
+    }
+
+
+    /* event section */
+
+    .schedule-section {
+        padding-top: 70px;
+    }
+
+    .schedule-section .schedule-container {
+        padding-inline: 1.5rem;
+    }
+
+    .schedule-heading h2 {
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+
+    .schedule-table thead th {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .schedule-table td {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .schedule-bottom-strip {
+        height: 3rem;
+    }
+}
+
+
+/* ================= HERO RESPONSIVE (≤ 376px) ================= */
+
+@media screen and (max-width: 376px) {
+
+    /* Hide last arrows for all headings */
+    .committee-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .registration-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .about-heading .arrow:last-child {
+        display: none;
+    }
+
+    .theme-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .speakers-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .publication-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    .organizing-heading h2 .arrow:last-child {
+        display: none;
+    }
+
+    /* registration and payment details */
+
+    .registration-section {
+        padding: 60px 0;
+    }
+
+    .registration-heading h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .registration-heading h2 .arrow {
+        font-size: 1.2rem;
+        margin: 0 8px;
+    }
+
+    .registration-grid {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .registration-item {
+        width: 100%;
+    }
+
+    .registration-icon img {
+        width: 115px;
+        margin-bottom: 15px;
+    }
+
+    .registration-item h4 {
+        font-size: 1.3rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    .registration-divider {
+        display: none;
+    }
+
+
+    /* organizing committee */
+
+    .organizing-section {
+        padding: 60px 0;
+    }
+
+    .organizing-heading h2 {
+        font-size: 1.4rem;
+        margin-bottom: 55px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .organizing-grid {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .organizing-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .organizing-divider {
+        display: none;
+    }
+
+    .organizing-member {
+        margin-bottom: 25px;
+    }
+
+    .organizing-member h5 {
+        font-size: 1.2rem;
+    }
+
+    .organizing-member p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+
+
+    /* publication section */
+
+    .publication-section {
+        padding: 60px 0;
+    }
+
+    .publication-heading h2 {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .publication-heading h2 .arrow {
+        font-size: 1.2rem;
+        margin: 0 8px;
+    }
+
+    .publication-intro {
+        font-size: 1rem;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .publication-list {
+        padding-left: 15px;
+    }
+
+    .publication-list li {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.8rem;
+    }
+
+    /* speakers section */
+
+    .speakers-section {
+        padding: 70px 0;
+    }
+
+    .speakers-heading h2 {
+        font-size: 1.6rem;
+        margin-bottom: 50px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+        /* Single column */
+        gap: 40px;
+    }
+
+    .speaker-card {
+        flex-direction: column;
+        /* Stack image + text */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .speaker-image {
+        width: 140px;
+        height: 140px;
+        border-width: 4px;
+    }
+
+    .speaker-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .speaker-info p {
+        font-size: 0.95rem;
+    }
+
+    /* theme section */
+
+    .theme-section {
+        padding: 60px 0;
+    }
+
+    .theme-heading h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .theme-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 50px;
+    }
+
+    /* Stack cards */
+    .theme-card,
+    .theme-card.reverse {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .theme-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .theme-content {
+        margin: 0;
+        padding: 25px 10px;
+    }
+
+    .theme-content h4 {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .theme-content p {
+        font-size: 1rem;
+    }
+
+    .theme-content li {
+        font-size: 0.9rem;
+    }
+
+    /* objective */
+
+    .objectives-section {
+        padding: 60px 0;
+    }
+
+    .objectives-heading {
+        font-size: 1rem;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .triangle {
+        border-left: 12px solid #fff;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+    }
+
+    .objective-item {
+        font-size: 0.95rem;
+        padding: 15px 0 30px 0;
+        line-height: 1.6;
+    }
+
+
+    /* header section */
+
+    /* Container padding reduce */
+    .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* Logo smaller */
+    .logo {
+        height: 35px;
+    }
+
+    /* Hero section height auto */
+    .hero-section {
+        min-height: 95vh;
+    }
+
+    /* Hero content spacing */
+    .hero-content {
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    /* Faculty text */
+    .faculty-text {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Conference badge */
+    .conference-badge {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    /* Main heading */
+    .main-heading {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    /* Date block */
+    .date-block h3 {
+        font-size: 18px;
+    }
+
+    .date-block p {
+        font-size: 13px;
+    }
+
+    /* Event info stack */
+    .event-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Divider hide */
+    .divider {
+        display: none;
+    }
+
+    /* Partner logo smaller */
+    .partner-logo {
+        height: 35px;
+    }
+
+    /* Hero bottom image adjust */
+    .hero-image img {
+        object-fit: contain;
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+        color: #fff !important;
+    }
+
+    /* Ensure close button is visible */
+    .nav-close {
+        display: flex !important;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: hsl(0, 0%, 100%);
+        z-index: 1001;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-close i {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+    /* Ensure toggle button is visible */
+    .nav-toggle {
+        display: flex !important;
+        font-size: 1.8rem;
+        color: #222;
+    }
+
+    /* Mobile menu adjustments */
+    .nav-menu {
+        padding: 5rem 2rem 3rem;
+    }
+
+
+    /* about */
+
+    .about-section {
+        padding: 60px 0 0 0;
+    }
+
+    .about-block {
+        margin-bottom: 50px;
+    }
+
+    .about-heading {
+        font-size: 1.2rem;
+        gap: 10px;
+    }
+
+    .arrow {
+        font-size: 1.2rem;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    .about-bottom-image {
+        margin-top: 40px;
+    }
+
+
+    /* commettiee section */
+
+    /* Reduce overall spacing */
+    .committee-content {
+        padding: 50px 0;
+    }
+
+    /* Hide decorative side images */
+    .committee-img {
+        display: none;
+    }
+
+    /* Heading */
+    .committee-heading h2 {
+        font-size: 1.4rem;
+        margin-bottom: 55px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .committee-heading h2 .arrow {
+        font-size: 1.2rem;
+        margin: 0 8px;
+    }
+
+    /* Stack layout */
+    .committee-grid {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .committee-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Remove vertical divider */
+    .committee-divider {
+        display: none;
+    }
+
+    /* Member spacing */
+    .committee-member {
+        margin-bottom: 35px;
+    }
+
+    .committee-member h5 {
+        font-size: 1.5rem;
+    }
+
+    .committee-member p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    /* Reduce red strip height */
+    .committee-top-strip,
+    .committee-bottom-strip {
+        height: 10px;
+    }
+
+
+    /* event section */
+
+    .schedule-section {
+        padding-top: 60px;
+    }
+
+    .schedule-section .schedule-container {
+        padding-inline: 1rem;
+    }
+
+    .schedule-heading h2 {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .schedule-heading h2 .arrow {
+        font-size: 1.2rem;
+        margin: 0 8px;
+    }
+
+    .schedule-table thead th {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .schedule-table td {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+
+    .schedule-bottom-strip {
+        height: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+        right: 15px;
+        bottom: 20px;
+    }
+
+    .scroll-to-top svg {
+        width: 18px;
+        height: 18px;
     }
 
 }
