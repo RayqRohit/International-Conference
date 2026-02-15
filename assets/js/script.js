@@ -5,12 +5,14 @@ const navMenu = document.getElementById('nav-menu'),
 if(navToggle){
    navToggle.addEventListener('click', () =>{
       navMenu.classList.add('show-menu')
+      document.body.style.overflow = 'hidden' // Disable scrolling
    })
 }
 
 if(navClose){
    navClose.addEventListener('click', () =>{
       navMenu.classList.remove('show-menu')
+      document.body.style.overflow = '' // Re-enable scrolling
    })
 }
 
@@ -20,6 +22,7 @@ const navLinks = document.querySelectorAll('.nav-link')
 navLinks.forEach(link => {
    link.addEventListener('click', () => {
       navMenu.classList.remove('show-menu')
+      document.body.style.overflow = '' // Re-enable scrolling
    })
 })
 

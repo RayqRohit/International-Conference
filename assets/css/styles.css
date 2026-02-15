@@ -46,6 +46,12 @@ body {
     font-family: var(--font-regular);
 }
 
+/* Prevent scrolling when mobile menu is open */
+body.menu-open {
+    overflow: hidden !important;
+    height: 100vh;
+}
+
 img {
     user-select: none;
     -webkit-user-drag: none;
