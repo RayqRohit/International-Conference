@@ -46,6 +46,20 @@ body {
     font-family: var(--font-regular);
 }
 
+/* Ensure RemixIcon fonts are properly rendered */
+i[class^="ri-"],
+i[class*=" ri-"] {
+    font-family: 'remixicon' !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+}
+
 /* Prevent scrolling when mobile menu is open */
 body.menu-open {
     overflow: hidden !important;
@@ -1006,20 +1020,31 @@ a {
     font-size: 1.2rem;
     display: inline-flex;
     align-items: center;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
 }
 
 .nav-link i {
     font-size: 1.2rem;
     position: absolute;
+    left: 0;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 .nav-link span {
     position: relative;
-    transition: margin 0.3s;
+    display: inline-block;
+    transition: margin-left 0.3s ease;
+    -webkit-transition: margin-left 0.3s ease;
+    -moz-transition: margin-left 0.3s ease;
+    -o-transition: margin-left 0.3s ease;
 }
 
 .nav-link span::after {
@@ -1031,49 +1056,52 @@ a {
     height: 2px;
     background-color: #b60000;
     transition: width 0.3s ease-out;
+    -webkit-transition: width 0.3s ease-out;
+    -moz-transition: width 0.3s ease-out;
+    -o-transition: width 0.3s ease-out;
 }
 
-/* Hover effects for devices with hover capability */
-@media (hover: hover) and (pointer: fine) {
-    .nav-link:hover span {
-        margin-left: 1.8rem;
-    }
+/* Universal hover effects - works on all browsers */
+.nav-link:hover span {
+    margin-left: 1.8rem;
+}
 
-    .nav-link:hover i {
-        opacity: 1;
-        visibility: visible;
-    }
+.nav-link:hover i {
+    opacity: 1;
+    visibility: visible;
+}
 
-    .nav-link:hover span::after {
-        width: 100%;
-    }
+.nav-link:hover span::after {
+    width: 100%;
+}
 
-    /* Sibling fade - only if :has() is supported */
-    @supports selector(:has(*)) {
-        .nav-list:has(.nav-link:hover) .nav-link:not(:hover) {
-            opacity: 0.5;
-        }
+/* Sibling fade effect with fallback */
+.nav-list:hover .nav-link:not(:hover) {
+    opacity: 0.5;
+}
+
+/* Fallback for :has() - works on older browsers */
+@supports selector(:has(*)) {
+    .nav-list:has(.nav-link:hover) .nav-link:not(:hover) {
+        opacity: 0.5;
     }
 }
 
-/* Touch/Click support for devices without hover */
-@media (hover: none) or (pointer: coarse) {
+/* Touch/Click support for mobile devices */
+.nav-link:active span,
+.nav-link:focus span {
+    margin-left: 1.8rem;
+}
 
-    .nav-link:active span,
-    .nav-link:focus span {
-        margin-left: 1.8rem;
-    }
+.nav-link:active i,
+.nav-link:focus i {
+    opacity: 1;
+    visibility: visible;
+}
 
-    .nav-link:active i,
-    .nav-link:focus i {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-link:active span::after,
-    .nav-link:focus span::after {
-        width: 100%;
-    }
+.nav-link:active span::after,
+.nav-link:focus span::after {
+    width: 100%;
 }
 
 /* Toggle + Close */
