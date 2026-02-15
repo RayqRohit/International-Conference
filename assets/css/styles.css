@@ -128,6 +128,7 @@ a {
     color: #c40000;
 }
 
+/* OLD nav-links - Not used anymore
 .nav-links a {
     font-size: 1.4rem;
     color: #222;
@@ -137,6 +138,7 @@ a {
 .nav-links a:hover {
     color: #c40000;
 }
+*/
 
 /* ===== HERO CONTENT ===== */
 .hero-content {
@@ -1013,95 +1015,105 @@ a {
     column-gap: 3rem;
 }
 
-.nav-link {
-    position: relative;
-    color: #222;
-    font-family: var(--font-medium);
-    font-size: 1.2rem;
-    display: inline-flex;
-    align-items: center;
-    transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
+/* Custom Nav Specific Styles - Override Bootstrap */
+.custom-nav .nav-link {
+    position: relative !important;
+    color: #222 !important;
+    font-family: var(--font-medium) !important;
+    font-size: 1.2rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    transition: opacity 0.3s ease !important;
+    -webkit-transition: opacity 0.3s ease !important;
+    -moz-transition: opacity 0.3s ease !important;
+    -o-transition: opacity 0.3s ease !important;
+    text-decoration: none !important;
+    padding: 0 !important;
 }
 
-.nav-link i {
-    font-size: 1.2rem;
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+.custom-nav .nav-link i {
+    font-size: 1.2rem !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    -webkit-transform: translateY(-50%) !important;
+    -moz-transform: translateY(-50%) !important;
+    -o-transform: translateY(-50%) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    z-index: 1 !important;
+    color: #222 !important;
+    transition: all 0.3s ease !important;
+    -webkit-transition: all 0.3s ease !important;
+    -moz-transition: all 0.3s ease !important;
+    -o-transition: all 0.3s ease !important;
+    pointer-events: none !important;
 }
 
-.nav-link span {
-    position: relative;
-    display: inline-block;
-    transition: margin-left 0.3s ease;
-    -webkit-transition: margin-left 0.3s ease;
-    -moz-transition: margin-left 0.3s ease;
-    -o-transition: margin-left 0.3s ease;
+.custom-nav .nav-link span {
+    position: relative !important;
+    display: inline-block !important;
+    z-index: 2 !important;
+    transition: margin-left 0.3s ease !important;
+    -webkit-transition: margin-left 0.3s ease !important;
+    -moz-transition: margin-left 0.3s ease !important;
+    -o-transition: margin-left 0.3s ease !important;
 }
 
-.nav-link span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background-color: #b60000;
-    transition: width 0.3s ease-out;
-    -webkit-transition: width 0.3s ease-out;
-    -moz-transition: width 0.3s ease-out;
-    -o-transition: width 0.3s ease-out;
+.custom-nav .nav-link span::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    bottom: -6px !important;
+    width: 0 !important;
+    height: 2px !important;
+    background-color: #b60000 !important;
+    transition: width 0.3s ease-out !important;
+    -webkit-transition: width 0.3s ease-out !important;
+    -moz-transition: width 0.3s ease-out !important;
+    -o-transition: width 0.3s ease-out !important;
 }
 
-/* Universal hover effects - works on all browsers */
-.nav-link:hover span {
-    margin-left: 1.8rem;
+/* Universal hover effects - Maximum specificity */
+.custom-nav .nav-item .nav-link:hover span,
+.custom-nav .nav-link:hover span {
+    margin-left: 1.8rem !important;
 }
 
-.nav-link:hover i {
-    opacity: 1;
-    visibility: visible;
+.custom-nav .nav-item .nav-link:hover i,
+.custom-nav .nav-link:hover i {
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
-.nav-link:hover span::after {
-    width: 100%;
+.custom-nav .nav-item .nav-link:hover span::after,
+.custom-nav .nav-link:hover span::after {
+    width: 100% !important;
 }
 
 /* Sibling fade effect with fallback */
-.nav-list:hover .nav-link:not(:hover) {
-    opacity: 0.5;
+.custom-nav .nav-list:hover .nav-link:not(:hover) {
+    opacity: 0.5 !important;
 }
 
 /* Fallback for :has() - works on older browsers */
 @supports selector(:has(*)) {
-    .nav-list:has(.nav-link:hover) .nav-link:not(:hover) {
-        opacity: 0.5;
+    .custom-nav .nav-list:has(.nav-link:hover) .nav-link:not(:hover) {
+        opacity: 0.5 !important;
     }
 }
 
 /* Touch/Click support for mobile devices */
-.nav-link:active span,
-.nav-link:focus span {
-    margin-left: 1.8rem;
+.custom-nav .nav-link:active span,
+.custom-nav .nav-link:focus span {
+    margin-left: 1.8rem !important;
 }
 
-.nav-link:active i,
-.nav-link:focus i {
-    opacity: 1;
-    visibility: visible;
-}
-
-.nav-link:active span::after,
-.nav-link:focus span::after {
-    width: 100%;
+.custom-nav .nav-link:active i,
+.custom-nav .nav-link:focus i {
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 /* Toggle + Close */
@@ -1110,4 +1122,18 @@ a {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* === CRITICAL FIX: Force hover to work on all browsers === */
+/* This overrides any conflicting Bootstrap or browser-specific styles */
+.custom-nav a.nav-link:hover i.ri-arrow-right-up-line,
+.custom-nav .nav-item a.nav-link:hover i {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+}
+
+.custom-nav a.nav-link:hover span,
+.custom-nav .nav-item a.nav-link:hover span {
+    margin-left: 1.8rem !important;
 }

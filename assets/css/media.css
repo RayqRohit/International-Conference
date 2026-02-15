@@ -89,13 +89,21 @@
         row-gap: 2.5rem;
     }
 
-    .nav-link {
-        color: #fff;
+    .custom-nav .nav-link {
+        color: #fff !important;
         font-size: 1.5rem;
     }
 
-    .nav-link span::after {
-        background-color: #fff;
+    .custom-nav .nav-link span {
+        color: #fff !important;
+    }
+
+    .custom-nav .nav-link i {
+        color: #fff !important;
+    }
+
+    .custom-nav .nav-link span::after {
+        background-color: #fff !important;
     }
 
     .nav-close {
@@ -116,13 +124,15 @@
     }
 
     /* Mobile menu hover and touch support */
-    .nav-link:hover i,
-    .nav-link:active i,
-    .nav-link:focus i {
-        opacity: 1;
-        visibility: visible;
+    .custom-nav .nav-link:hover i,
+    .custom-nav .nav-link:active i,
+    .custom-nav .nav-link:focus i {
+        opacity: 1 !important;
+        visibility: visible !important;
+        color: #fff !important;
     }
 
+    /* OLD - Not needed anymore
     .nav-links a {
         color: #fff;
     }
@@ -132,6 +142,7 @@
         color: #fff;
         opacity: 0.8;
     }
+    */
 
     /* Nav Item Animation */
     .nav-item {
@@ -167,9 +178,9 @@
         transition-delay: 0.5s;
     }
 
-    .nav-link:focus,
-    .nav-link:hover,
-    .nav-link:active {
+    .custom-nav .nav-link:focus,
+    .custom-nav .nav-link:hover,
+    .custom-nav .nav-link:active {
         color: #fff !important;
     }
 }
@@ -1312,7 +1323,7 @@
         font-size: 1.3rem;
     }
 
-    .organizing-heading h2 .arrow{
+    .organizing-heading h2 .arrow {
         margin: 0;
     }
 
@@ -1721,9 +1732,9 @@
         object-fit: contain;
     }
 
-    .nav-link:focus,
-    .nav-link:hover,
-    .nav-link:active {
+    .custom-nav .nav-link:focus,
+    .custom-nav .nav-link:hover,
+    .custom-nav .nav-link:active {
         color: #fff !important;
     }
 
