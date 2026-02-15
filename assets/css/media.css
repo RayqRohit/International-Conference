@@ -1286,6 +1286,8 @@
 
     .organizing-heading h2 {
         font-size: 1.6rem;
+        flex-wrap: wrap;
+        line-height: 0.8;
     }
 
     .organizing-grid {
@@ -1308,6 +1310,10 @@
 
     .organizing-member h5 {
         font-size: 1.3rem;
+    }
+
+    .organizing-heading h2 .arrow{
+        margin: 0;
     }
 
 
