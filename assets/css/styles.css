@@ -1023,23 +1023,46 @@ a {
     transition: width 0.3s ease-out;
 }
 
-/* Hover */
-.nav-link:hover span {
-    margin-left: 1.8rem;
+/* Hover effects for devices with hover capability */
+@media (hover: hover) and (pointer: fine) {
+    .nav-link:hover span {
+        margin-left: 1.8rem;
+    }
+
+    .nav-link:hover i {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-link:hover span::after {
+        width: 100%;
+    }
+
+    /* Sibling fade - only if :has() is supported */
+    @supports selector(:has(*)) {
+        .nav-list:has(.nav-link:hover) .nav-link:not(:hover) {
+            opacity: 0.5;
+        }
+    }
 }
 
-.nav-link:hover i {
-    opacity: 1;
-    visibility: visible;
-}
+/* Touch/Click support for devices without hover */
+@media (hover: none) or (pointer: coarse) {
+    .nav-link:active span,
+    .nav-link:focus span {
+        margin-left: 1.8rem;
+    }
 
-.nav-link:hover span::after {
-    width: 100%;
-}
+    .nav-link:active i,
+    .nav-link:focus i {
+        opacity: 1;
+        visibility: visible;
+    }
 
-/* Sibling fade */
-.nav-list:has(.nav-link:hover) .nav-link:not(:hover) {
-    opacity: 0.5;
+    .nav-link:active span::after,
+    .nav-link:focus span::after {
+        width: 100%;
+    }
 }
 
 /* Toggle + Close */

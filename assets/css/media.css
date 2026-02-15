@@ -115,7 +115,10 @@
         padding-top: 3rem;
     }
 
-    .nav-link:hover i {
+    /* Mobile menu hover and touch support */
+    .nav-link:hover i,
+    .nav-link:active i,
+    .nav-link:focus i {
         opacity: 1;
         visibility: visible;
     }
@@ -124,7 +127,8 @@
         color: #fff;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .nav-links a:active {
         color: #fff;
         opacity: 0.8;
     }
@@ -164,7 +168,8 @@
     }
 
     .nav-link:focus,
-    .nav-link:hover {
+    .nav-link:hover,
+    .nav-link:active {
         color: #fff !important;
     }
 }
@@ -1711,7 +1716,8 @@
     }
 
     .nav-link:focus,
-    .nav-link:hover {
+    .nav-link:hover,
+    .nav-link:active {
         color: #fff !important;
     }
 
