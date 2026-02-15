@@ -101,7 +101,7 @@ a {
     position: relative;
     background: url('../images/hero/hero-background-texture.webp') no-repeat center;
     background-size: cover;
-    min-height: 125vh;
+    min-height: 128vh;
     padding-bottom: 120px;
 }
 
