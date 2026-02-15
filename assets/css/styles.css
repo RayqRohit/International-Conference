@@ -1,26 +1,30 @@
 /* ===== FONTS ===== */
 @font-face {
     font-family: 'Poppins-Regular';
-    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Poppins-Medium';
-    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2');
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Poppins-Bold';
-    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2');
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Poppins-ExtraBold';
-    src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+    src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2');
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -30,10 +34,10 @@ html {
 }
 
 :root {
-    --font-regular: 'Poppins-Regular', sans-serif;
-    --font-medium: 'Poppins-Medium', sans-serif;
-    --font-bold: 'Poppins-Bold', sans-serif;
-    --font-extrabold: 'Poppins-ExtraBold', sans-serif;
+    --font-regular: 'Poppins-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    --font-medium: 'Poppins-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    --font-bold: 'Poppins-Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    --font-extrabold: 'Poppins-ExtraBold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
 }
 
 /* ===== GLOBAL ===== */
@@ -1048,6 +1052,7 @@ a {
 
 /* Touch/Click support for devices without hover */
 @media (hover: none) or (pointer: coarse) {
+
     .nav-link:active span,
     .nav-link:focus span {
         margin-left: 1.8rem;
